@@ -11,7 +11,7 @@ import {
   Target,
   Megaphone
 } from 'lucide-react';
-import FleetTile from './components/FleetTile';
+import OmniRetailTile from './components/OmniRetailTile';
 
 export default function App() {
   return (
@@ -76,9 +76,9 @@ export default function App() {
           <div className="flex flex-col items-center justify-center py-4">
              {/* 
                  REPLACED ORIGINAL HTML BLOCK WITH REACT COMPONENT 
-                 This component is self-contained in components/FleetTile.tsx
+                 This component is self-contained in components/OmniRetailTile.tsx
              */}
-             <FleetTile />
+             <OmniRetailTile />
           </div>
 
           {/* Footer Stats Grid */}

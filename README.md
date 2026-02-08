@@ -22,17 +22,17 @@ Key features:
    ```
 2. Import the component in your layout:
    ```tsx
-   import FleetTile from './components/FleetTile';
+   import CarAutoGrowthTile from './components/CarAutoGrowthTile';
 
    export default function Dashboard() {
      return (
        <div className="w-full flex justify-center p-10">
-         <FleetTile />
+         <CarAutoGrowthTile />
        </div>
      );
    }
    ```
-3. The component is self-contained in `components/FleetTile.tsx`.
+3. The component is self-contained in `components/CarAutoGrowthTile.tsx`.
 
 ## App Name
 AutomotiveHero Dashboard
