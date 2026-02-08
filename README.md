@@ -1,11 +1,38 @@
-<div align="center">
+# AutomotiveHero Growth Dashboard Tile
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Description
+This project features a high-fidelity **1:1 Dashboard Tile** extracted from the AutomotiveHero interface. It uses a "Cockpit" layout strategy to present complex lead journey data in a 600x600px square frame.
 
-  <h1>Built with AI Studio</h2>
+Key features:
+- **Vertical Hierarchy**: Header (Status) -> Main View (Map + Sidebar Metrics) -> Footer (Telemetry).
+- **Interactive Map**: SVG Bezier curve with animated cars traversing the path.
+- **Glassmorphism**: High-performance backdrop blurs for overlay elements.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Tech Stack
+- **React 18+**: Core framework.
+- **TypeScript**: Type safety.
+- **Tailwind CSS**: Utility-first styling (no external CSS files).
+- **Framer Motion**: Advanced animations for SVG paths and floating elements.
+- **Lucide React**: Modern, consistent iconography replacing Google Material Symbols.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Usage
+1. Ensure dependencies are installed:
+   ```bash
+   npm install framer-motion lucide-react clsx tailwind-merge
+   ```
+2. Import the component in your layout:
+   ```tsx
+   import FleetTile from './components/FleetTile';
 
-</div>
+   export default function Dashboard() {
+     return (
+       <div className="w-full flex justify-center p-10">
+         <FleetTile />
+       </div>
+     );
+   }
+   ```
+3. The component is self-contained in `components/FleetTile.tsx`.
+
+## App Name
+AutomotiveHero Dashboard
